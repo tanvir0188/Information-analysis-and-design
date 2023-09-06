@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <style>
+        body {
+            background-image: url("walle.jpg");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            margin-bottom: 2rem;
+            font-size: medium;
+
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            font-size: 18px;
+        }
+
+        .center {
+            padding: 500px 0;
+            padding-left: 150px;
+            width: 50%;
+            height: 100%;
+            line-height: 10px;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color:
+                white;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color:
+                aquamarine;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function navigateToPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+    <div class="topright">
+        <button class="button hover-underline-animation" onclick="navigateToPage('portfolio_home.html')">Home</button> &nbsp &nbsp
+        <button class="button hover-underline-animation" onclick="navigateToPage('portfolio_skill.html')">Skill</button> &nbsp &nbsp
+        <button class="button hover-underline-animation" onclick="navigateToPage('Interest.html')">Interest</button> &nbsp &nbsp
+        <button class="button hover-underline-animation" onclick="navigateToPage('education.html')">Education</button> &nbsp &nbsp
+        <button class="button hover-underline-animation"onclick="navigateToPage('projects.html')">Projects</button> &nbsp &nbsp
+        <button class="button hover-underline-animation" onclick="navigateToPage('contact.html')">Contact</button> &nbsp &nbsp
+    </div>
+    <div class="center" style="font-size: x-large;">
+        <b>I have interests in both indoor and outdoor activities.</b> <br><br> <br>
+        <h1>Outdoor activities</h1>
+        <p>
+           <b> Football, Cricket, Badminton</b>
+        </p><br>
+        <h1>Indoor activities</h1>
+        <p><b>Video games, Tv series, Movies</b></p>
+    </div>
+
+</body>
+</html>
